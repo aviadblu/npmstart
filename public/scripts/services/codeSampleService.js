@@ -3,10 +3,20 @@
 var app = angular.module('npmStartApp')
 
 app.service('CodeSampleService', ['$http', '$resource', function($http, $resource) {
+	
+	var getTagsCollection = function(query) {
+			return $http.get('/codesamples/tags?q=' + query)
+			.success(function(data, status, headers, config) {
+				//console.log("getTagsCollection success");
+			})
+			.error(function(data, status, headers, config) {
+				console.log("getTagsCollection error");
+			});
+	};
 
 	var getSampleCollection = function( ) {
 
-		return $http.get('/data/codesamplecollection.json')
+		return $http.get('/codesamples/codesamplecollection')
 			.success(function(data, status, headers, config) {
 				console.log("getSampleCollection success");
 			})
@@ -31,7 +41,8 @@ app.service('CodeSampleService', ['$http', '$resource', function($http, $resourc
 	return {
 		getAllSampleProviders: getSampleProviders,
 		getSampleProviderById: getSampleProviderById,
-		getSampleCollection: getSampleCollection
+		getSampleCollection: getSampleCollection,
+		getTagsCollection: getTagsCollection
 	};
 
 }]);
