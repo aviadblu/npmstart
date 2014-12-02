@@ -24,7 +24,8 @@ angular.module('npmStartApp', [
     'LocalStorageModule',
     'ui.grid',
     'ui.grid.selection',
-    'uiGridLinkWrapper'
+    'uiGridLinkWrapper',
+    'ngTagsInput'
 ])
     .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         //delete $httpProvider.defaults.headers.common['X-Requested-With'];
