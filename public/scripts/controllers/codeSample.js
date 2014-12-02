@@ -133,6 +133,12 @@ app.controller('codeSampleCtrl', ['$scope', '$location', '$http', 'CodeSampleSer
         $activityIndicator.stopAnimating();
 
     });
+    
+    // aviad
+    $scope.tags = [];
+    $scope.loadTags = function(query) {
+        return CodeSampleService.getTagsCollection(query);
+    };
 
 }]);
 
