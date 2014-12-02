@@ -1,4 +1,4 @@
-<div data-ng-hide="AILoading" data-ng-show="!AILoading" class="col-sm-4 portfolio-item" ng-repeat="sampleItem in codeSampleCollection | filter:searchString:strict">
+<div data-ng-hide="AILoading" data-ng-show="!AILoading" class="col-sm-4 portfolio-item" ng-repeat="sampleItem in codeSampleCollection | filter:searchString:strict | selectedTags:tags">
     <div class="portfolio-item">
         <a id="{{sampleItem.id}}" href="javascript:void(0)" class="portfolio-link" data-toggle="modal">
             <div class="portfolio-caption">
