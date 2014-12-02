@@ -12,7 +12,8 @@
         "type": "github",
         "name" :"",
         "link": ""
-      }
+      },
+     "tags":["nodejs","node","node.js","express","web"]
   },
   {
     "id": "mongo",
@@ -27,7 +28,8 @@
         "type": "github",
         "name" :"",
         "link": ""
-      }
+      },
+     "tags":["nodejs","node","node.js","rest","mongo","mongodb","mongoose"]
   },
   {
     "id": "heroku",
@@ -42,7 +44,8 @@
         "type": "github",
         "name" :"",
         "link": ""
-      }
+      },
+     "tags":["cloud","cloud platform","heroku","server","node","nodejs","node.js"]
   },
   {
     "id": "spyjs",
@@ -57,7 +60,8 @@
         "type": "github",
         "name" :"spy-js/spy-js",
         "link": "https://github.com/spy-js/spy-js"
-      }
+      },
+    "tags":["spyjs","spy","js","javascript"]
   },
   {
     "id": "mocha",
@@ -72,7 +76,8 @@
         "type": "github",
         "name" :"mochajs/mocha",
         "link": "https://github.com/mochajs/mocha"
-      }
+      },
+    "tags":["mocha","js","javascript","node","nodejs","node.js"]
   },
   {
     "id": "restify",
@@ -87,7 +92,8 @@
         "type": "github",
         "name" :"mcavage/node-restify",
         "link": "https://github.com/mcavage/node-restify"
-      }
+      },
+    "tags":["rest","restify","node","nodejs","node.js"]
   },
   {
     "id": "jade",
@@ -102,6 +108,7 @@
         "type": "github",
         "name" :"jadejs/jade",
         "link": "https://github.com/jadejs/jade"
-      }
+      },
+    "tags":["jade","templates","node","nodejs","node.js","js","javascript"]
   }
 ]
