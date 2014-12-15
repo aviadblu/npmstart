@@ -1,0 +1,38 @@
+
+<header>
+    
+    <div class="wrapper">
+        <div ng-include="'components/navbar/navbar.html'"></div>
+        <div class="bottle"><img src="assets/images/bottle.png"></div>
+        <h1>
+            An online node.js lab
+            explore, try and test your node.js code instantly
+        </h1>
+    </div>
+    
+</header>
+
+<section class="labs_search">
+    <div class="wrapper">
+        
+    </div>
+</section>
+
+<section class="labs_categories">
+    <div class="wrapper">
+        <div class="hex" ng-repeat="sample in codeSampleCollection" ng-class="{soon:!sample.ready}">
+            <div class="background"></div>
+            <div class="text">
+                <h3 ng-bind="sample.name"></h3>
+                <p ng-bind=""></p>
+            </div>
+            <div class="logo">
+                <img src="assets/images/mongodb-logo.png">
+            </div>
+            <div class="new"></div>
+            <div class="soon"></div>
+        </div>        
+        <br class="clr" >
+    </div>
+</section>
+<footer class="footer" ng-include="'components/footer/footer.html'" ng-controller="FooterCtrl"></footer>
