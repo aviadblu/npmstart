@@ -1,7 +1,7 @@
-NPMStart
+Codefresh Labs
 =========
 
-NPMStart is a community project.
+Codefresh Labs is a community project.
 
 Version
 ----
