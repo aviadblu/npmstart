@@ -4,6 +4,26 @@ var app = angular.module('codeFreshSiteApp')
 
 app.service('CodeSampleService', ['$http', '$resource', function($http, $resource) {
 	
+	var search = function(query) {
+			return $http.post('/codesamples/search',query)
+			.success(function(data, status, headers, config) {
+				
+			})
+			.error(function(data, status, headers, config) {
+				
+			});
+	};
+	
+	var getCategoriesCollection = function() {
+			return $http.get('/codesamples/categories')
+			.success(function(data, status, headers, config) {
+				console.log("getTagsCollection success");
+			})
+			.error(function(data, status, headers, config) {
+				console.log("getCategoriesCollection error");
+			});
+	};
+	
 	var getTagsCollection = function(query) {
 			return $http.get('/codesamples/tags?q=' + query)
 			.success(function(data, status, headers, config) {
@@ -39,6 +59,8 @@ app.service('CodeSampleService', ['$http', '$resource', function($http, $resourc
 	}
 
 	return {
+		search: search,
+		getCategoriesCollection: getCategoriesCollection,
 		getAllSampleProviders: getSampleProviders,
 		getSampleProviderById: getSampleProviderById,
 		getSampleCollection: getSampleCollection,

@@ -20,18 +20,9 @@
 
 <section class="labs_categories">
     <div class="wrapper">
-        <div class="hex" ng-repeat="sample in codeSampleCollection" ng-class="{soon:!sample.ready}">
-            <div class="background"></div>
-            <div class="text">
-                <h3 ng-bind="sample.name"></h3>
-                <p ng-bind=""></p>
-            </div>
-            <div class="logo">
-                <img src="assets/images/mongodb-logo.png">
-            </div>
-            <div class="new"></div>
-            <div class="soon"></div>
-        </div>        
+
+        <codesample ng-class="cat.color" category-obj="cat" search-code="searchCode(query)" ng-repeat="cat in codeCategoriesCollection" template-url="components/codesample/categories.html"></codesample>
+        
         <br class="clr" >
     </div>
 </section>

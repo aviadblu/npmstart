@@ -7,7 +7,8 @@
 			'ngSanitize',
 			'ngAnimate',
 			'ui.router',
-			'ui.bootstrap'
+			'ui.bootstrap',
+                        'labsDirectives'
 		])
 		.config(Configuration)
 		.run(function ($state, $rootScope, $stateParams) {

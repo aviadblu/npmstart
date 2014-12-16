@@ -1947,28 +1947,30 @@ section.labs_search {
     background-color: #fff;
 }
 
-/* labs hex */
+/* labs codesample */
 .clr {
     clear:both;    
 }
 
-.hex {
-        position:relative;		
-        width:292px;
-        height:335px;
-        margin:10px 0px;
-        cursor:pointer;
-        float:left;
+codesample {
+    display:block;
+    position:relative;		
+    width:292px;
+    height:335px;
+    margin:10px 0px;
+    cursor:pointer;
+    float:left;
 }
 
-.hex:hover .text{
+codesample:hover .text{
         height:335px;
         padding:55px 30px;
         color:#fff;
 }
 
-.hex .text {
+codesample .text {
         position:absolute;
+        font-size: 18px;
         bottom:0px;
         height:170px;
         width:100%;
@@ -1984,7 +1986,7 @@ section.labs_search {
 }
 
 
-.hex .text h3 {
+codesample .text h3 {
     text-align:center;
     font-size:32px;
     font-family: "Podkova", Georgia, serif;
@@ -1993,17 +1995,21 @@ section.labs_search {
     margin-top:5px;
 }
 
-.hex.blue .text {background-color:#3690c3;}
-.hex.orange .text {background-color:#d88400;}
-.hex.gray .text {background-color:#7c7d75;}
+codesample .text p {
+    text-align:center;
+}
 
-.hex.yellow .text {background-color:#e4bb0e;}
-.hex.yellow:hover .text {color:#2e2e2e;}
+codesample.blue .text {background-color:#3690c3;}
+codesample.orange .text {background-color:#d88400;}
+codesample.gray .text {background-color:#7c7d75;}
+
+codesample.yellow .text {background-color:#e4bb0e;}
+codesample.yellow:hover .text {color:#2e2e2e;}
 
 
 
 
-.hex .background {
+codesample .background {
         position:absolute;
         top:0px;
         width:295px;
@@ -2012,7 +2018,7 @@ section.labs_search {
         z-index:10;
 }
 
-.hex .logo{
+codesample .logo{
         position:absolute;
         top:0px;
         width:295px;
@@ -2022,11 +2028,15 @@ section.labs_search {
         text-align:center;
 }
 
-.hex .logo img {
+codesample .logo img {
+    max-height:60px;
+}
+
+codesample .logo img {
         margin-top:90px;
 }
 
-.hex .new {
+codesample .new {
         display:none;
         position:absolute;
         top:0px;
@@ -2037,7 +2047,7 @@ section.labs_search {
         z-index:11;
 }
 
-.hex .soon {
+codesample .soon {
         display:none;
         position:absolute;
         top:20px;
@@ -2048,11 +2058,11 @@ section.labs_search {
         z-index:11;
 }
 
-.hex.new .new {
+codesample.new .new {
         display:block;
 }
 
-.hex.soon .soon {
+codesample.soon .soon {
         display:block;
 }
 
