@@ -1,6 +1,6 @@
 var directives = angular.module('labsDirectives', []);
 
-directives.directive('codesample', function() {
+directives.directive('codecategory', function() {
     return {
             restrict: 'EA',
             transclude: false,
@@ -17,4 +17,18 @@ directives.directive('codesample', function() {
     };
 });
 
+directives.directive('codesample', function() {
+    return {
+            restrict: 'EA',
+            transclude: false,
+            scope: {
+                templateUrl: '@',
+                sample: '=sampleObj'
+            },
+            template: "<div ng-include='templateUrl'></div>",
+            link: function(scope, element, attr, ctrl, transclude){
+                
+            }
 
+    };
+});

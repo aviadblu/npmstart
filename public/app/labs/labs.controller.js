@@ -7,6 +7,9 @@
 
 	/* @ngInject */
 	function LabsCtrl($scope, $http, $location, CodeSampleService) {
+		
+		$scope.codeCategoriesCollection = [];
+		$scope.codeSamplesCollection = false;
 	     
 		$scope.searchCode = function(query) {
 		    var query_obj = {};
@@ -28,7 +31,7 @@
 	    
 		var applySearch = function(query_obj) {
 		    CodeSampleService.search(query_obj).success(function(data, status, headers, config) {
-			    $scope.codeCategoriesCollection = data;
+			    $scope.codeSamplesCollection = data;
 		    });
 		};
 	    
